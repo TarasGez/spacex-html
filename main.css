@@ -1,0 +1,296 @@
+body {
+    background-color: black;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    min-width: 1220px;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.space-between{
+    justify-content: space-between;
+}
+.stretch{
+    align-items: stretch;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.grey{
+    color:#9cb2c7;
+}
+.banner_img{
+    height: 700px;
+    background: url("./images/space.png") no-repeat;
+    background-size: cover;
+}
+
+
+
+ul{
+    display: flex;
+    align-items: stretch;
+    min-height: 70px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#7f96bc 0%, #556f8b 100%);
+}
+ul li{
+    flex-grow: 1;
+    padding: 0.7rem;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, #6f8cae 0%, #5d7695 100%);
+    border-image-slice: 1;
+    font-size: 0.9em;
+}
+ul li span{
+    display:block;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header ul li.active{
+    background: #98b5d3;
+}
+header ul li i.minus{
+    display: inline-block;
+    width: 20px;
+    height: 0.5em;
+    margin-left: 5em; 
+    background-color: #a2edf2;
+}
+header ul li.arrow{
+    background-image: url('./images/arrow.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center right 20px;
+}
+section.day ul {
+    height: 120px;
+    background-image: linear-gradient(#536b88 0%, #7f97bc 100%);
+}
+
+section.day ul li span{
+    font-size: 3rem;
+    font-weight: normal;
+}
+section.day ul li.graph{
+    background: url("./images/graph.png") no-repeat top left;
+    background-size: contain;
+}
+section.day ul li.active{
+    background-image: linear-gradient(#7f96bc 0%, #556f8b 100%);
+}
+
+section.day ul li span.flex b{
+    flex-grow: 1;
+}
+section.day ul li span.note {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.margin_left1{
+    margin-left:1rem;
+}
+b {
+    color: #a2edf2;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: #a2edf2;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+section.alarms li{
+    background-color:#6682a3;
+    justify-content: space-between;
+}
+section.alarms span{
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 1.5rem;
+}
+section.alarms ul li span b {
+    font-size: 3em;
+    margin-right: 1rem;
+}
+section.los ul li ul,
+section.los ul li ul
+{
+    height: 10rem;
+}
+section.los ul{
+    padding: 0;
+}
+section.los ul li.first{
+    border: none;
+    padding: 0;
+}
+section.los ul li {
+    font-size: 1rem;
+}
+section.los ul li ul li{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+section.los ul li ul li span.first,
+section.los ul li section span.first.time{
+    font-size: 2.2rem;
+    font-weight: normal;
+    margin-right: 1rem;
+    width: 130px;
+}
+section.los ul li section span.first.small{
+    font-size: 1em;
+}
+hr {
+    height: 0;
+    width: 100%;
+    border:2px solid #526c88;
+}
+
+.schedule{
+    padding: 0 1rem;
+    background: #5d7695;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, #6f8cae 0%, #5d7695 100%);
+    border-image-slice: 1;
+    font-size: 1.2rem;
+}
+.schedule h3{
+    font-size: 2rem;
+}
+.schedule h3 span{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.schedule ul{
+    background: inherit;
+    justify-content: flex-start;
+}
+.schedule hr{
+    border-color: #6f8cae;
+}
+.schedule ul li{
+    border:0;
+    flex-grow: 0;
+}
+
+.schedule .slider{
+    margin-left:2rem;
+    width:0px;
+    border: 2px solid white;
+}
+.schedule .slider .kolo{
+    margin-left: -7px; 
+    margin-top: 50px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+}
+.schedule ul li.flex-grow1{
+    flex-grow: 1;
+}
+.schedule ul.go-go li{
+    border-bottom: 3px solid #536b88;
+}
+.schedule ul.go-go li:last-child{
+    border:none;
+}
+
+.rendezvous ul li{
+    padding: 0;
+}
+.rendezvous ul.header {
+    background-color: #7f97bc;
+    background-image: none;
+    padding: 0;
+    font-size: 1.3rem;
+}
+.rendezvous ul.header li{
+    padding:1.1em;
+    border:none;
+    border-left: 4px solid #536b88;
+}
+.rendezvous ul.header li:first-child{
+    border:none;
+}
+.rendezvous ul.table,
+.rendezvous ul.table ul
+{
+    background-image: none;
+    background-color:#6682a3;
+    min-height:0;
+}
+.rendezvous ul.table li.title{
+    flex-grow: 0;
+    width:100px;
+}
+.rendezvous ul.table li{
+    border:none;
+}
+.rendezvous ul.table li ul li.title{
+    padding:1rem 2rem;
+}
+
+.rendezvous ul.table li ul li{
+    border:2px solid #536b88;
+    border-right: none;
+    border-left: 4px solid #536b88;
+    padding:1rem 0;
+    font-size: 1rem;
+    height: 1rem;
+}
+.rendezvous ul.table li ul li:first-child{
+    border-left:none;
+}
+.rendezvous ul.table li ul li{
+    display:flex;
+}
+.rendezvous ul.table li ul li i{
+    flex-grow: 1;
+    height: 2rem;
+    margin-top:-0.5rem;
+}
+.rendezvous ul.table li ul li i.zxc{
+    background-color: #98b5d3;
+}
+.rendezvous ul.table li ul.hours li span{
+    font-size:1rem;
+    margin-left: -1rem;
+}
+.rendezvous ul.table li.load{
+    height: 4rem;
+    display:flex;
+}
+.rendezvous ul.table li.load span{
+    background-color: #7f96bc;
+    flex-grow: 4;
+}
+.rendezvous ul.table li.load span:first-child{
+    background-color: #a2edf2;
+    border-top:4px solid #7f96bc;
+    flex-grow: 1;
+}
